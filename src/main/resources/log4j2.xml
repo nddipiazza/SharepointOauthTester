@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="WARN">
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{ISO8601} - %-5p [%t:%C{16}@%L] - %X - %m%n"/>
+        </Console>
+    </appenders>
+    <loggers>
+        <logger name="org.apache.http" level="DEBUG"/>
+        <logger name="org.apache.http.wire" level="ERROR"/>
+        <root level="INFO">
+            <appender-ref ref="Console"/>
+        </root>
+    </loggers>
+</configuration>
